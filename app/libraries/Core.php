@@ -16,6 +16,9 @@
          $this->getUrl();
      }
      public function getUrl(){
-         echo $_GET['url'];
+         if(isset($_GET['url'])){
+             echo $_GET['url'];
+         }
+         else echo "no url is there";
      }
  }
